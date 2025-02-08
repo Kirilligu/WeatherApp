@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark">
+    <FrameLayout
+        android:id="@+id/container_fragm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonContainer" />
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#263238">
+        <Button
+            android:id="@+id/btnBrief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кратко"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF9800"
+            android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/btnDetailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Детали"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF9800"/>
+    </LinearLayout>
+</RelativeLayout>
